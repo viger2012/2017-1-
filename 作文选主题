@@ -1,0 +1,24 @@
+import random
+keyswords=['一带一路', '大熊猫', '广场舞', '中华美食', '长城', '共享单车', '京剧', '空气污染', '美丽乡村', '食品安全', '高铁', '移动支付']
+
+key2=[]
+for i in range(0,12):
+    for j in range(i+1,12):
+        key2=key2+[keyswords[i]+','+keyswords[j]]
+print(key2)
+
+
+key3=[]
+for i in range(0,12):
+    for j in range(i+1,12):
+        for k in range(j+1,12):
+            key3=key3+[keyswords[i]+','+keyswords[j]+','+keyswords[k]]
+
+print(key3)
+
+
+
+print(key2[random.randint(0,65)]+'/'+key3[random.randint(0,219)])
+#随机选择组合
+
+
